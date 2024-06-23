@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Shop</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-weight: bold;
+        color: white;
+      }
+      body {
+        font-family: 'font-family: "Lato", sans-serif;';
+        background-color: rgb(57, 51, 51);
+      }
+      header {
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid wheat;
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+      }
+      ul li a {
+        margin: 0 5px;
+        border: solid wheat;
+        padding: 0 10px;
+        border-radius: 50px;
+      }
+      .logo {
+        border: 2px solid wheat;
+        padding: 10px 20px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .signup {
+        background-color: rgb(196, 228, 77);
+        color: black;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .signup:hover {
+        background-color: black;
+        color: rgb(185, 240, 108);
+      }
+      main {
+        display: flex;
+        height: 90vh;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0px 150px;
+      }
+      main h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      main p {
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 31px;
+        margin: 30px;
+      }
+      .contentleft {
+        flex: 1;
+      }
+      .contentmid {
+        flex: 2;
+      }
+      .contentright {
+        flex: 1;
+      }
+      .Mercury {
+        max-width: 250px;
+        height: auto;
+      }
+      .btn {
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        outline: none;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 50px;
+      }
+      .btn:hover {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Offer</a></li>
+          <li><a href="#">Bye Now</a></li>
+          <li><a href="#">Sell Now</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#" class="signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="contentleft">
+        <h1><u>Mercury</u></h1>
+      </div>
+      <div class="contentmid">
+        <p>
+          Mercury, the smallest planet in our solar system, is closest to the
+          Sun, orbiting it every 88 Earth days. Its diameter is about 4,880
+          kilometers, making it only slightly larger than Earth's Moon. Mercury
+          has a rocky, heavily cratered surface, with temperatures ranging from
+          extremely hot (up to 430°C) during the day to extremely cold (down to
+          -180°C) at night. <br />The planet lacks a significant atmosphere to
+          retain heat. Mercury has a large iron core, which generates a weak
+          magnetic field, about 1% as strong as Earth's. There is no water on
+          Mercury's surface, but ice exists in permanently shadowed craters at
+          its poles. <br />The planet's proximity to the Sun and rapid orbital
+          speed make it challenging to observe from Earth. Despite its harsh
+          conditions, missions like NASA's MESSENGER have provided valuable
+          insights into Mercury's composition and geological history.
+        </p>
+        <button class="btn">Button</button>
+      </div>
+      <div class="contentright">
+        <img src="./Images/Mercury.png" alt="Mercury" class="Mercury" />
+      </div>
+    </main>
+  </body>
+</html>
